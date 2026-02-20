@@ -1,4 +1,10 @@
 from fastapi import FastAPI
+from pydantic import BaseModel,EmailStr
+
+class User(BaseModel):
+    name:str
+    age:int
+    email:EmailStr
 
 app=FastAPI()
 
@@ -11,6 +17,8 @@ def add(ab,f):
     return {"Fahad"}
 def asylum(shear_brute):
     return ("We must endure the")
+ 
+
 
 
 
