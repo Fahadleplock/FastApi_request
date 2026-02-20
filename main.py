@@ -7,6 +7,11 @@ app=FastAPI()
 def multyply(a:int,b:int):
     return {a*b}
 
+def add(ab,f):
+    return {"Fahad"}
+def asylum(shear_brute):
+    return ("We must endure the")
+
 
 
 
