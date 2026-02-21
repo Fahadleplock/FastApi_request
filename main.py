@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel,EmailStr
+import asyncio
+import time
+
 
 class User(BaseModel):
     name:str
@@ -17,6 +20,13 @@ def add(ab,f):
     return {"Fahad"}
 def asylum(shear_brute):
     return ("We must endure the")
+
+
+async def george(a,b):
+    await time.sleep(6)
+    return (a+b)
+
+async def get():
  
 
 
